@@ -1498,6 +1498,9 @@ class NavigatorState extends State<Navigator> with TickerProviderStateMixin {
 
   final List<OverlayEntry> _initialOverlayEntries = <OverlayEntry>[];
 
+  List<Route<dynamic>> get history{
+    return _history;
+  }
   @override
   void initState() {
     super.initState();
